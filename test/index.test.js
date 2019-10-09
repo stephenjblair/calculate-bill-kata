@@ -9,8 +9,8 @@ const TestRunner = require("jest-runner");
 // takes price, VAT and tip rate as numbers
 // returns the totalamount formatted as a currency string
 // (amount + (amount * vat /100 ) + tip)
-
+const calculateBill = require('../index');
 test("calculateBill is a function", () => {
 
-    expect(calculateBill.toBeDefined) ();
+    expect(calculateBill).toBeDefined();
 });
