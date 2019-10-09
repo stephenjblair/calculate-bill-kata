@@ -14,3 +14,8 @@ test("calculateBill is a function", () => {
 
     expect(calculateBill).toBeDefined();
 });
+
+test("it returns a string", () => {
+    const result = calculateBill();
+    expect(typeof result).toBe("string");
+});
