@@ -17,5 +17,14 @@ test("calculateBill is a function", () => {
 
 test("it returns a string", () => {
     const result = calculateBill();
+
     expect(typeof result).toBe("string");
 });
+
+test("it returns the right amount", () => {
+    const price = 100;
+    const vat = 20;
+    const tip = 10;
+
+    expect(calculateBill(price, vat, tip)).toBe("£130");
+})
